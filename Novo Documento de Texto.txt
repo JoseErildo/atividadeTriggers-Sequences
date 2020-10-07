@@ -1,0 +1,20 @@
+create or replace function delete_voo()
+	returns trigger
+	language plpgsql
+	as $$
+	begin
+	
+		delete from cliente where codigo = (select codigo from cliente inner join cliente_voo on 
+			cliente.codigo = cliente_voo.cliente inner join voo
+			on cliente_voo.voo = voo.codigo
+			where cliente.codigo = cliente_voo.cliente and cliente_voo.voo = voo.codigo);
+
+		
+		return new;
+	end;
+	$$
+	
+create trigger delete_voo
+	after delete on voo
+	for each row execute procedure delete_voo();
+
