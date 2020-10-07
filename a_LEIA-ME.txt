@@ -1,0 +1,11 @@
+Por algum motivo o git não coneguiu organizarem ordem as questões 10, 11, 12, 13, 14; mas elas
+se aplicam às últimas questões da primeira parte da lista (inicio de sequence -> final de triggers).
+
+Os arquivos:
+iteracao_q10.sql
+iteracao_q11.sql
+iteracao_q12.sql
+iteracao_q13.sql
+iteracao_q14.sql
+
+correpondem as questões 10 -> 14 respectivamente
