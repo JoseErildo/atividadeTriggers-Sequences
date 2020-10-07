@@ -1,1 +1,0 @@
-alter sequence numero_100_em_diante restart with 100 increment by 1 maxvalue 200;
